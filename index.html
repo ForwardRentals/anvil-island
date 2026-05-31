@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anvil Island & Leading Peak — A Field Guide to the Howe Sound Summit, BC</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A clear, honest field guide to Anvil Island and Leading Peak in Howe Sound, BC — the boat-only access, the steep exposed summit, the private-land reality, and how to arrange a crossing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff; --paper-warm: #faf6ee; --paper-deep: #f1ece0; --paper-card: #ffffff;
+    --ink: #0f0e0c; --ink-soft: #2d2922; --ink-mute: #6a6258; --rule: #e3ddd0; --rule-strong: #cdc6b8;
+    --moss: #2b3a2b; --rust: #8a4a2c; --gold: #b5832e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: "Inter", system-ui, -apple-system, sans-serif; font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  ::selection { background: var(--ink); color: var(--paper); }
+  a { color: inherit; text-decoration: none; }
+  .underline-link { border-bottom: 1px solid var(--rule); transition: border-color 0.2s; } .underline-link:hover { border-bottom-color: var(--ink); }
+  h1, h2, h3, h4 { font-family: "Fraunces", "Times New Roman", serif; color: var(--ink); font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; margin: 0; font-variation-settings: "opsz" 144, "SOFT" 30; }
+  h1 { font-size: clamp(2.5rem, 5.5vw, 4.25rem); font-weight: 400; letter-spacing: -0.025em; }
+  h2 { font-size: clamp(1.55rem, 2.8vw, 2.1rem); font-weight: 400; letter-spacing: -0.02em; }
+  h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.3; letter-spacing: -0.01em; }
+  em { font-style: italic; }
+  p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 1.04rem; line-height: 1.7; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 2rem; } .wrap-narrow { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+  nav.top { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+  nav.top .inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 2rem; }
+  .mark { font-family: "Fraunces", serif; font-size: 1rem; font-weight: 500; color: var(--ink); }
+  .mark small { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-mute); margin-top: 0.15rem; }
+  nav.top .links { display: flex; gap: 1.5rem; }
+  nav.top .links a { font-family: "Inter", sans-serif; font-size: 0.76rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; color: var(--ink-soft); }
+  nav.top .links a:hover { color: var(--ink); }
+  @media (max-width: 760px) { nav.top .links { display: none; } }
+  .breadcrumb { padding: 1.5rem 0 0.75rem; font-family: "Inter", sans-serif; font-size: 0.78rem; color: var(--ink-mute); font-weight: 500; }
+  .breadcrumb a { color: var(--ink-mute); } .breadcrumb a:hover { color: var(--ink); }
+  .breadcrumb .sep { padding: 0 0.65rem; color: var(--ink-mute); opacity: 0.6; } .breadcrumb .here { color: var(--ink); font-weight: 500; }
+  .title-block { padding: 0.75rem 0 1.5rem; } .title-block h1 { margin-bottom: 0.75rem; }
+  .meta-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.85rem; font-size: 0.95rem; color: var(--ink-soft); }
+  .meta-row .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--ink-mute); opacity: 0.5; }
+  .meta-row .difficulty { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
+  .meta-row .difficulty::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--rust); }
+  .meta-row .park { color: var(--ink); } .meta-row .park:hover { text-decoration: underline; }
+  .tabs { margin-top: 1.75rem; border-bottom: 1px solid var(--rule); display: flex; gap: 2rem; overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
+  .tabs::-webkit-scrollbar { display: none; }
+  @media (max-width: 680px) { .tabs { gap: 1.5rem; } .tabs a { font-size: 0.88rem; padding: 0.75rem 0 0.85rem; } }
+  .tabs a { padding: 0.85rem 0 0.95rem; font-family: "Inter", sans-serif; font-size: 0.95rem; font-weight: 500; color: var(--ink-mute); border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+  .tabs a:hover { color: var(--ink); } .tabs a.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .hero-layout { margin: 1.5rem 0 0; display: grid; grid-template-columns: 1.5fr 1fr; gap: 1.5rem; align-items: stretch; }
+  @media (max-width: 860px) { .hero-layout { grid-template-columns: 1fr; gap: 1.25rem; } }
+  .hero-photo { background-color: var(--paper-deep); border-radius: 6px; aspect-ratio: 4 / 3; min-height: 380px; border: 1px solid var(--rule); display: grid; place-items: center; color: var(--moss); }
+  .hero-photo svg { width: 64%; height: auto; opacity: 0.8; }
+  @media (max-width: 860px) { .hero-photo { aspect-ratio: 16/10; min-height: 240px; } }
+  .hero-details { display: flex; flex-direction: column; gap: 1rem; }
+  .details-card { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper-warm); padding: 1.5rem; }
+  .details-card h3 { font-family: "Inter", sans-serif; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); margin: 0 0 1.25rem; }
+  .details-card .row { display: grid; grid-template-columns: 28px 1fr auto; gap: 0.85rem; align-items: center; padding: 0.85rem 0; border-top: 1px solid var(--rule); }
+  .details-card .row:first-of-type { border-top: none; padding-top: 0; } .details-card .row:last-of-type { padding-bottom: 0; }
+  .details-card .row .ic { color: var(--moss); } .details-card .row .ic svg { width: 24px; height: 24px; display: block; }
+  .details-card .row .k { font-family: "Inter", sans-serif; font-size: 0.92rem; color: var(--ink-mute); font-weight: 500; }
+  .details-card .row .v { font-family: "Fraunces", serif; font-size: 1.15rem; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; } .details-card .row .v.small { font-size: 1rem; }
+  section.overview { padding: 2.5rem 0 4rem; }
+  section.overview .grid { display: grid; grid-template-columns: 1.65fr 1fr; gap: 4rem; }
+  @media (max-width: 900px) { section.overview .grid { grid-template-columns: 1fr; gap: 2rem; } }
+  section.overview .lead { font-family: "Fraunces", serif; font-size: 1.4rem; line-height: 1.5; color: var(--ink); font-weight: 400; margin-bottom: 1.5rem; letter-spacing: -0.005em; }
+  section.overview p { font-size: 1.04rem; }
+  .sidecard { background: var(--paper-deep); border: 1px solid var(--rule); border-radius: 4px; padding: 1.5rem; }
+  .sidecard h4 { font-family: "Inter", sans-serif; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; margin-bottom: 1rem; }
+  .sidecard ul { list-style: none; padding: 0; margin: 0; }
+  .sidecard ul li { display: flex; gap: 0.75rem; align-items: baseline; padding: 0.55rem 0; border-top: 1px solid var(--rule); font-size: 0.95rem; color: var(--ink-soft); }
+  .sidecard ul li:first-child { border-top: none; padding-top: 0; }
+  .sidecard ul li .k { color: var(--ink-mute); flex: 0 0 80px; font-size: 0.85rem; } .sidecard ul li .v { color: var(--ink); font-weight: 500; } .sidecard ul li .v em { font-family: "Fraunces", serif; font-weight: 400; }
+  section.expect { padding: 3.5rem 0; border-top: 1px solid var(--rule); }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); display: block; margin-bottom: 0.9rem; }
+  .section-head { margin-bottom: 2.25rem; max-width: 34ch; }
+  .expect-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem 2.5rem; }
+  @media (max-width: 900px) { .expect-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .expect-grid { grid-template-columns: 1fr; } }
+  .expect-row { display: grid; grid-template-columns: 40px 1fr; gap: 1rem; align-items: start; }
+  .expect-row .icon { color: var(--moss); padding-top: 2px; } .expect-row .icon svg { width: 32px; height: 32px; display: block; }
+  .expect-row h3 { font-family: "Inter", sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 0.25rem; }
+  .expect-row p { font-size: 0.92rem; margin: 0; color: var(--ink-soft); line-height: 1.55; }
+  section.water { padding: 3.5rem 0; background: var(--paper-deep); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .water-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; }
+  @media (max-width: 760px) { .water-cards { grid-template-columns: 1fr; } }
+  .water-card { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 1.5rem; display: flex; flex-direction: column; }
+  .water-card .ic { color: var(--moss); margin-bottom: 0.6rem; } .water-card .ic svg { width: 40px; height: 40px; display: block; }
+  .water-card h3 { margin-bottom: 0.45rem; font-family: "Fraunces", serif; font-weight: 500; font-size: 1.2rem; }
+  .water-card p { font-size: 0.95rem; color: var(--ink-soft); margin: 0 0 1rem; }
+  .water-card a.cta { margin-top: auto; display: inline-block; padding: 0.55rem 1.1rem; border: 1px solid var(--ink); font-family: "Inter", sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--ink); border-radius: 999px; transition: all 0.2s; align-self: flex-start; }
+  .water-card a.cta:hover { background: var(--ink); color: var(--paper); }
+  .closure-note { margin-top: 1.5rem; padding: 1rem 1.25rem; background: rgba(138,74,44,0.08); border-left: 2px solid var(--rust); font-size: 0.93rem; color: var(--ink); }
+  .closure-note strong { display: block; font-family: "Inter", sans-serif; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.35rem; font-weight: 600; }
+  .closure-note a { border-bottom: 1px solid var(--rule); } .closure-note a:hover { border-bottom-color: var(--ink); }
+  section.deep { padding: 3.5rem 0; border-top: 1px solid var(--rule); }
+  .seasons { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-top: 1rem; }
+  @media (max-width: 680px) { .seasons { grid-template-columns: repeat(2, 1fr); } .seasons > div:nth-child(2) { border-right: none; } }
+  .seasons > div { padding: 1rem 1rem 1rem 0; border-right: 1px solid var(--rule); } .seasons > div:last-child { border-right: none; }
+  .seasons .sn { font-family: "Fraunces", serif; font-style: italic; font-size: 1rem; color: var(--ink); margin-bottom: 0.3rem; } .seasons .sd { font-size: 0.87rem; color: var(--ink-soft); line-height: 1.5; }
+  section.honest { padding: 3.5rem 0; border-top: 1px solid var(--rule); } section.honest p { font-size: 1.02rem; color: var(--ink-soft); } section.honest em { color: var(--ink); }
+  footer.foot { padding: 2.5rem 0 2rem; border-top: 1px solid var(--rule); background: var(--paper-deep); }
+  .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; margin-bottom: 1.75rem; }
+  @media (max-width: 680px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-grid h4 { font-family: "Inter", sans-serif; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; margin-bottom: 0.7rem; }
+  .foot-grid p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; } .foot-grid ul li { margin-bottom: 0.4rem; font-size: 0.88rem; }
+  .foot-grid ul li a { color: var(--ink-soft); } .foot-grid ul li a:hover { color: var(--ink); }
+  .foot-bottom { border-top: 1px solid var(--rule); padding-top: 1.25rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.76rem; color: var(--ink-mute); } .foot-bottom em { font-family: "Fraunces", serif; }
+  .line { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; } .line.thin { stroke-width: 1.1; }
+  .faq-list { margin-top: 2rem; border-top: 1px solid var(--rule); }
+  details.faq-item { border-bottom: 1px solid var(--rule); }
+  details.faq-item > summary { list-style: none; cursor: pointer; outline: none; padding: 1.5rem 0; display: grid; grid-template-columns: 2rem 1fr 1.5rem; gap: 1rem; align-items: baseline; font-family: "Fraunces", serif; font-weight: 500; font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.012em; color: var(--ink); }
+  details.faq-item > summary::-webkit-details-marker { display: none; } details.faq-item > summary:hover { color: var(--moss); }
+  .faq-item .q-n { font-family: "Fraunces", serif; font-style: italic; color: var(--ink-mute); font-size: 0.95rem; }
+  .faq-item .q-plus { font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.5rem; color: var(--ink-mute); justify-self: end; line-height: 1; transition: transform 0.2s; }
+  details.faq-item[open] > summary .q-plus { transform: rotate(45deg); }
+  .faq-item .a { padding: 0 1.5rem 1.75rem 3rem; } @media (max-width: 700px){ .faq-item .a { padding: 0 0 1.5rem 0; } }
+  .faq-item .a p { font-size: 1rem; margin: 0 0 0.9rem; color: var(--ink-soft); } .faq-item .a p:last-child { margin: 0; }
+  .faq-item .a a { border-bottom: 1px solid var(--rule); transition: border-color 0.2s; } .faq-item .a a:hover { border-bottom-color: var(--ink); }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="inner">
+    <a href="https://seatoskytrails.com/" class="mark" style="color:var(--ink);">Sea to Sky Trails<small>An entry in Volume I</small></a>
+    <div class="links"><a href="#overview">Overview</a><a href="#expect">What to expect</a><a href="#access">Getting there</a><a href="#season">When to go</a><a href="#faq">Questions</a></div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="https://seatoskytrails.com/">Trails</a><span class="sep">/</span><span class="here">Anvil Island</span></div>
+  <div class="title-block">
+    <h1>Anvil Island <span style="font-style:italic;color:var(--ink-soft);font-weight:300;">&amp; Leading Peak</span></h1>
+    <div class="meta-row">
+      <span class="difficulty">Hard</span><span class="dot"></span>
+      <a href="#access" class="park underline-link">Howe Sound &mdash; boat access only</a><span class="dot"></span>
+      <span style="color:var(--ink-soft);">Átl&rsquo;ḵa7tsem / Howe Sound, BC</span>
+    </div>
+    <div class="tabs"><a href="#overview" class="active">Overview</a><a href="#expect">What to expect</a><a href="#access">Getting there</a><a href="#season">When to go</a><a href="#faq">Questions</a></div>
+  </div>
+
+  <div class="hero-layout">
+    <div class="hero-photo" role="img" aria-label="Anvil Island rising from Howe Sound, with Leading Peak at its summit">
+      <svg viewBox="0 0 200 150" class="line" aria-hidden="true">
+        <path d="M20 120 L70 40 L92 70 L120 24 L150 64 L180 120" />
+        <path d="M112 38 L120 24 L130 42" opacity="0.6"/>
+        <path d="M0 122 Q50 130 100 124 T200 122"/>
+        <path d="M0 132 Q50 138 100 132 T200 132" opacity="0.5"/>
+        <path d="M0 142 Q50 146 100 142 T200 142" opacity="0.3"/>
+        <g transform="translate(40 126)"><path d="M-12 0 Q0 4 12 0"/><path d="M-12 0 Q0 2 12 0"/></g>
+      </svg>
+    </div>
+    <div class="hero-details">
+      <div class="details-card">
+        <h3>Summit Details</h3>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><path d="M 4 20 L 12 6 L 20 20"/><path d="M 4 20 L 20 20"/><path d="M 12 6 L 12 20" opacity="0.5"/></svg></div><div class="k">Summit</div><div class="v">Leading Peak <span style="font-size:0.85rem;color:var(--ink-mute);">~700 m</span></div></div>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><path d="M 3 18 L 9 10 L 13 14 L 21 4"/><path d="M 21 4 L 21 9 M 21 4 L 16 4"/></svg></div><div class="k">Gain</div><div class="v">~700 m <span style="font-size:0.85rem;color:var(--ink-mute);">from the sea</span></div></div>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><circle cx="12" cy="12" r="9"/><path d="M 12 7 L 12 12 L 15 14"/></svg></div><div class="k">Type</div><div class="v small">Island summit</div></div>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4" fill="#8a4a2c" stroke="none"/></svg></div><div class="k">Difficulty</div><div class="v small">Hard &middot; exposed</div></div>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><path d="M 3 17 C 6 14, 9 16, 12 14 C 15 12, 18 14, 21 12"/><path d="M 6 10 L 18 10 L 16 7 M 18 10 L 16 13"/></svg></div><div class="k">Access</div><div class="v small">Boat only</div></div>
+        <div class="row"><div class="ic"><svg viewBox="0 0 24 24" class="line"><path d="M 4 18 L 12 6 L 20 18"/><circle cx="12" cy="13" r="2"/></svg></div><div class="k">Land</div><div class="v small">Largely private</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="overview" id="overview">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="section-eyebrow">Quick Take</span>
+        <p class="lead">Anvil Island is the dark, anvil-shaped peak you stare at from the Sea to Sky Highway and the BC Ferries deck &mdash; rising straight out of Átl&rsquo;ḵa7tsem (Howe Sound) with Leading Peak at its summit. There&rsquo;s no ferry, no road, and no casual trailhead. Getting onto it, and up it, is a genuine small expedition, and that is the whole appeal.</p>
+        <p>Leading Peak is a steep, exposed scramble that tops out around 700 metres &mdash; effectively sea-level to summit in one go. From the top the view down the Sound is one of the best in the region: islands, ferries, the Tantalus behind, the Sky Pilot group across the water. It is a serious objective for experienced, self-sufficient parties, not a stroller hike.</p>
+        <p>The catch you need to know up front: <em>much of Anvil Island is private land</em>. Access is by boat, the land ownership is complicated, and the route is not a maintained public trail. This page is an honest orientation &mdash; not a green light. Do your homework on access before you plan a trip.</p>
+      </div>
+      <aside class="sidecard">
+        <h4>At a glance</h4>
+        <ul>
+          <li><span class="k">Where</span><span class="v">Howe Sound</span></li>
+          <li><span class="k">Summit</span><span class="v">Leading Peak ~700 m</span></li>
+          <li><span class="k">Access</span><span class="v">Boat only</span></li>
+          <li><span class="k">Route</span><span class="v">Steep, exposed scramble</span></li>
+          <li><span class="k">Land</span><span class="v">Largely private</span></li>
+          <li><span class="k">Maintained?</span><span class="v">No</span></li>
+          <li><span class="k">Best for</span><span class="v">Experienced parties</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="expect" id="expect">
+  <div class="wrap">
+    <div class="section-head"><span class="section-eyebrow">What to Expect</span><h2>Six things to know first.</h2></div>
+    <div class="expect-grid">
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><path d="M 4 26 L 14 8 L 20 18 L 26 26"/><path d="M 4 26 L 26 26"/></svg></div><div><h3>Sea level to summit</h3><p>~700 m straight up from the boat landing. No warm-up, no easing in.</p></div></div>
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><path d="M 6 26 L 16 6 L 26 26"/><circle cx="16" cy="17" r="2.5"/></svg></div><div><h3>Steep &amp; exposed</h3><p>A real scramble with exposure near the top. Not for nervous footing.</p></div></div>
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><path d="M 3 20 C 7 17, 11 19, 16 17 C 21 15, 25 17, 29 15"/><path d="M 9 11 L 23 11 L 20 7 M 23 11 L 20 15"/></svg></div><div><h3>Boat access only</h3><p>No ferry, no road. You arrange your own crossing of the Sound.</p></div></div>
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><path d="M 6 26 L 16 8 L 26 26 Z"/><circle cx="16" cy="18" r="2"/></svg></div><div><h3>Largely private land</h3><p>Ownership is complicated. Check access before you commit to a plan.</p></div></div>
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><circle cx="16" cy="16" r="11"/><path d="M 11 16 C 13 13, 19 13, 21 16 C 19 19, 13 19, 11 16 Z"/></svg></div><div><h3>A top-tier view</h3><p>The whole Sound at your feet &mdash; arguably the best seat in Howe Sound.</p></div></div>
+      <div class="expect-row"><div class="icon"><svg viewBox="0 0 32 32" class="line"><circle cx="16" cy="16" r="11"/><path d="M 16 9 L 16 16 L 21 19"/></svg></div><div><h3>A full, committing day</h3><p>Weather, tides, and the crossing all have to line up. Plan it like a trip.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="water" id="access">
+  <div class="wrap">
+    <div class="section-head"><span class="section-eyebrow">Getting There</span><h2>You have to cross the Sound.</h2></div>
+    <div class="water-cards">
+      <div class="water-card"><div class="ic"><svg viewBox="0 0 40 40" class="line"><path d="M 6 30 C 15 34, 25 34, 34 30 L 31 24 L 9 24 Z"/><path d="M 20 24 L 20 12"/><path d="M 20 14 L 30 18 L 20 20 Z"/><path d="M 3 33 Q 12 30 20 33" opacity="0.5"/></svg></div><h3>Your own boat</h3><p>The traditional way: a private boat, kayak crossing for the experienced, or a friend with a runabout. Howe Sound water is cold and the wind comes up &mdash; treat the crossing as seriously as the climb.</p></div>
+      <div class="water-card"><div class="ic"><svg viewBox="0 0 40 40" class="line"><path d="M 5 30 C 14 34, 26 34, 35 30 L 32 24 L 8 24 Z"/><path d="M 14 24 L 16 16 L 28 16 L 30 24"/><path d="M 21 16 L 21 10"/></svg></div><h3>Arrange a charter crossing</h3><p>No boat? We can help line up a charter across the Sound and a pickup for the way back. Tell us your date and group size and we&rsquo;ll sort the logistics.</p><a href="mailto:hello@seatoskytrails.com?subject=Anvil%20Island%20crossing&body=Date%3A%0AGroup%20size%3A%0ADeparture%20point%3A%0AReturn%20pickup%20needed%3A" class="cta">Enquire about a crossing</a></div>
+    </div>
+    <div class="closure-note"><strong>Field Note &middot; access first</strong>Much of Anvil Island is private land and the route up Leading Peak is unmaintained. Before you plan anything, confirm current access &mdash; this page is an orientation, not permission. When in doubt, ask first.</div>
+  </div>
+</section>
+
+<section class="deep" id="season">
+  <div class="wrap-narrow">
+    <div class="section-head"><span class="section-eyebrow">When to Go</span><h2>A summer objective, weather-permitting.</h2></div>
+    <div class="seasons">
+      <div><div class="sn">Apr &ndash; May</div><div class="sd">Cold water, unsettled weather, snow lingering high. Early for this one.</div></div>
+      <div><div class="sn">Jun &ndash; Jul</div><div class="sd">The window opens. Longer days give margin for the crossing and climb.</div></div>
+      <div><div class="sn">Aug</div><div class="sd">Prime &mdash; the most settled weather and the calmest Sound crossings.</div></div>
+      <div><div class="sn">Sep</div><div class="sd">Crisp, clear, quiet. Watch the forecast; fall systems arrive fast.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="honest">
+  <div class="wrap-narrow">
+    <div class="section-head"><span class="section-eyebrow">Honest Note</span><h2>Read this before you plan a trip.</h2></div>
+    <p>This is the most committing entry in the guide, and the one with the biggest asterisk. <em>Much of Anvil Island is privately owned</em>, the route up Leading Peak is not a maintained public trail, and the crossing is open, cold water that demands real boating judgment. None of that is a formality &mdash; confirm access and conditions before you go, and turn the day around if either isn&rsquo;t right.</p>
+    <p>There is no cell certainty, no quick rescue, and no margin for a casual approach. Go with experience, leave a detailed plan with someone onshore, and respect that you are a guest &mdash; on private land and in Sḵwx̱wú7mesh (Squamish) Nation waters. Leave it exactly as you found it.</p>
+  </div>
+</section>
+
+<section class="deep" id="faq">
+  <div class="wrap-narrow">
+    <div class="section-head"><span class="section-eyebrow">Questions &amp; Answers</span><h2>The questions people actually ask about Anvil Island.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item"><summary><span class="q-n">01</span><span class="q-t">How do you get to Anvil Island?</span><span class="q-plus">+</span></summary><div class="a"><p>By boat only &mdash; there&rsquo;s no ferry and no road. People reach it by private boat, by experienced sea-kayak crossing, or by charter. Howe Sound is cold and the wind builds through the day, so the crossing deserves as much planning as the climb. If you don&rsquo;t have a boat, <a href="mailto:hello@seatoskytrails.com?subject=Anvil%20Island%20crossing">we can help arrange a charter crossing</a>.</p></div></details>
+      <details class="faq-item"><summary><span class="q-n">02</span><span class="q-t">Can the public hike Leading Peak?</span><span class="q-plus">+</span></summary><div class="a"><p>This is the important one: <em>much of Anvil Island is private land</em>, and the route up Leading Peak is not a maintained public trail. Access is complicated and can change. Treat this page as an orientation, not permission &mdash; confirm current access before you plan a trip, and don&rsquo;t assume.</p></div></details>
+      <details class="faq-item"><summary><span class="q-n">03</span><span class="q-t">How hard is the climb?</span><span class="q-plus">+</span></summary><div class="a"><p>Hard. It&rsquo;s roughly 700 metres of gain from sea level to the summit, steep throughout, with real exposure near the top &mdash; a scramble, not a walk. It suits fit, experienced parties who are comfortable with steep, unmaintained terrain and route-finding.</p></div></details>
+      <details class="faq-item"><summary><span class="q-n">04</span><span class="q-t">How long does it take?</span><span class="q-plus">+</span></summary><div class="a"><p>Plan a full, committing day once you factor in the boat crossing both ways, the steep climb and descent, and a margin for weather and wind. This is a trip to start early and not rush, with turnaround times agreed in advance.</p></div></details>
+      <details class="faq-item"><summary><span class="q-n">05</span><span class="q-t">Is it worth it?</span><span class="q-plus">+</span></summary><div class="a"><p>For the right party, the summit view over Átl&rsquo;ḵa7tsem (Howe Sound) is among the best anywhere in the region &mdash; islands, ferries, the Tantalus and Sky Pilot ringing the water. But &ldquo;worth it&rdquo; assumes you&rsquo;ve sorted access, the crossing, and the conditions. The view is the reward for doing the homework.</p></div></details>
+      <details class="faq-item"><summary><span class="q-n">06</span><span class="q-t">When is the best time to go?</span><span class="q-plus">+</span></summary><div class="a"><p>Summer &mdash; roughly June through September, with August the most settled for both the climb and the Sound crossing. Watch the marine forecast as closely as the mountain one, and be willing to stand down if the water&rsquo;s up.</p><p>Prefer something gentler on the water? See the <a href="https://seatoskytrails.com/">Sea to Sky Trails</a> guides for the lakes and river paddles of the corridor.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><h4>The Guide</h4><p>Anvil Island is an entry in the Sea to Sky Trails &mdash; a slow-built field guide to the lakes, hikes, and outposts of the Coast Mountains.</p></div>
+      <div><h4>More Field Guides</h4><ul><li><a href="https://lakelovelywater.com/">Lake Lovely Water</a></li><li><a href="https://echolakesquamish.com/">Echo Falls</a></li><li><a href="https://callaghanlake.com/">Callaghan Lake</a></li><li><a href="https://seatoskytrails.com/">All field guides</a></li></ul></div>
+      <div><h4>Plan a Crossing</h4><ul><li><a href="mailto:hello@seatoskytrails.com?subject=Anvil%20Island%20crossing">Enquire about a charter</a></li><li><a href="https://seatoskytrails.com/">Sea to Sky Trails</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div><em>Sea to Sky Trails</em> &middot; Anvil Island &middot; Published in Sḵwx̱wú7mesh territory.</div>
+      <div>Set in Fraunces &amp; Inter. Reader-funded.</div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How do you get to Anvil Island?", "acceptedAnswer": { "@type": "Answer", "text": "By boat only; there is no ferry and no road. People reach it by private boat, by experienced sea-kayak crossing, or by charter. Howe Sound is cold and windy, so the crossing deserves as much planning as the climb. If you do not have a boat, a charter crossing can be arranged." } },
+    { "@type": "Question", "name": "Can the public hike Leading Peak on Anvil Island?", "acceptedAnswer": { "@type": "Answer", "text": "Much of Anvil Island is private land, and the route up Leading Peak is not a maintained public trail. Access is complicated and can change. Treat this as an orientation, not permission, and confirm current access before planning a trip." } },
+    { "@type": "Question", "name": "How hard is the Leading Peak climb?", "acceptedAnswer": { "@type": "Answer", "text": "Hard. It is roughly 700 metres of gain from sea level to the summit, steep throughout, with real exposure near the top. It is a scramble, not a walk, suited to fit, experienced parties comfortable with unmaintained terrain and route-finding." } },
+    { "@type": "Question", "name": "How long does Anvil Island take?", "acceptedAnswer": { "@type": "Answer", "text": "Plan a full, committing day once you factor in the boat crossing both ways, the steep climb and descent, and a margin for weather and wind. Start early and agree turnaround times in advance." } },
+    { "@type": "Question", "name": "Is climbing Anvil Island worth it?", "acceptedAnswer": { "@type": "Answer", "text": "For the right party, the summit view over Howe Sound is among the best in the region. But that assumes you have sorted access, the crossing, and the conditions first." } },
+    { "@type": "Question", "name": "When is the best time to go to Anvil Island?", "acceptedAnswer": { "@type": "Answer", "text": "Summer, roughly June through September, with August the most settled for both the climb and the Sound crossing. Watch the marine forecast as closely as the mountain forecast and be willing to stand down if the water is up." } }
+  ]
+}
+</script>
+
+</body>
+</html>
